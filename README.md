@@ -22,7 +22,7 @@ This is a little sample implementation of "Contact book" register that shows som
 
 ### Preparation in Visual Studio
 Simply download the code and open `sln` in Visual Studio.
-https://drive.google.com/drive/folders/1lqO7reDkeGGCMysqTpqdCg0tSi1usClI?usp=sharing
+https://github.com/manojks99ncr/Visual-Studio
 
 Right click on solution and go to `Properties` - navigate to `Common properties - Startup Project`.
 
