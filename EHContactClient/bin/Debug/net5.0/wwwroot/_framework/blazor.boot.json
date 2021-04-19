@@ -200,11 +200,11 @@
       "mscorlib.dll": "sha256-OoIy6q8Z4O5iSevqVXHfYC14mo\/kaxz74ydYX19CiAA=",
       "netstandard.dll": "sha256-FbW0xcZkySFb6B8yBpUE8XmaiMacDVdXdN9GeDH6xu4=",
       "System.Private.CoreLib.dll": "sha256-AQbVm+Z+NByScjRZWDWQnNUk5PBVgwCSWPLQN4YxxZs=",
-      "EHContactClient.dll": "sha256-DCY5RzGJq35zGB80VhDEsggMwrs9DKMSednN+zsvmpM="
+      "EHContactClient.dll": "sha256-BsyaklpIe7IZCJdt0\/L6eWK1amRmsc0CXG7YqVgYDDk="
     },
     "lazyAssembly": null,
     "pdb": {
-      "EHContactClient.pdb": "sha256-KyMJO9pufUGuquqsWiVpTVqqhyj6iZSX7dYs+zeEzDw="
+      "EHContactClient.pdb": "sha256-vRfoWzus7wmx5sdv+jTPLsjXvEqTptjNQ0yB3IMfIK4="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-rFG55cwkAnfHzxmxwBL2tTwfj8X8cjcSEAlco4bc1eo=",

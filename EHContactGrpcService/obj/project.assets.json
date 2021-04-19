@@ -734,11 +734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source\\EHI\\EHI\\EHContactGrpcService\\EHContactGrpcService.csproj",
+      "projectUniqueName": "D:\\Source\\Visual-Studio\\EHI\\Visual-Studio\\EHContactGrpcService\\EHContactGrpcService.csproj",
       "projectName": "EHContactGrpcService",
-      "projectPath": "D:\\Source\\EHI\\EHI\\EHContactGrpcService\\EHContactGrpcService.csproj",
+      "projectPath": "D:\\Source\\Visual-Studio\\EHI\\Visual-Studio\\EHContactGrpcService\\EHContactGrpcService.csproj",
       "packagesPath": "C:\\Users\\priti\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\EHI\\EHI\\EHContactGrpcService\\obj\\",
+      "outputPath": "D:\\Source\\Visual-Studio\\EHI\\Visual-Studio\\EHContactGrpcService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\priti\\AppData\\Roaming\\NuGet\\NuGet.Config",

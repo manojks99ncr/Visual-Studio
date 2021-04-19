@@ -4,7 +4,7 @@
     EHI Contact list
 </div>
 <hr style="color:#5c116f" />
-<div class="row" style="padding-left:900px;padding-bottom:4px">
+<div class="row" style="float: right">
 
     <button id="btnAdd" @onclick="contactOperation.ShowAddpopup" style="background-color:#5c116f;color:white;font-family:Calibri">Add New </button>
 </div>
@@ -61,7 +61,7 @@ else
                     <table border="0" cellspacing="1">
                         <tr>
                             <td><strong>ID</strong></td>
-                            <td><input type="text" @bind="contactOperation.contactData.Id" maxlength="20" /></td>
+                            <td><input type="text" @bind="contactOperation.contactData.Id" maxlength="20" disabled /></td>
                         </tr>
 
                         <tr>
@@ -121,12 +121,12 @@ else
                 <table>
                     <tr>
                         <td colspan="2">
-                            Are you sure you want to delete this ToDo Item with Id @contactOperation.DeleteItemId ?
+                            Are you sure you want to delete this Item with Id @contactOperation.DeleteItemId ?
                         </td>
                     </tr>
                     <tr>
                         <td align="right"><button class="btn btn-primary" @onclick="contactOperation.DeleteData">Ok</button></td>
-                        <td align="left"><button class="btn btn-danger">Cancel</button></td>
+                        <td align="left"><button class="btn btn-danger"  @onclick="contactOperation.DismissPopup">Cancel</button></td>
                     </tr>
 
                 </table>
@@ -145,5 +145,4 @@ else
     protected override async Task OnInitializedAsync()
     {
         await contactOperation.GetContactList();
-
     } }

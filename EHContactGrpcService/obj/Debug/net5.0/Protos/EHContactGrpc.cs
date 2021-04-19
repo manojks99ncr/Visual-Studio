@@ -8,11 +8,6 @@
 using grpc = global::Grpc.Core;
 
 namespace EHContactGrpcService.Protos {
-  /// <summary>
-  ///
-  ///Basic sample of Phone Book. It contains basic CRUD operations with simple request and response
-  ///There is additional "Search" sample that responds with a stream of results.
-  /// </summary>
   public static partial class EHContact
   {
     static readonly string __ServiceName = "EHContact";

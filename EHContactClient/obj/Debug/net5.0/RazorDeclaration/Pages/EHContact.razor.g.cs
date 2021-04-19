@@ -99,7 +99,6 @@ using EHContactClient.Shared;
     protected override async Task OnInitializedAsync()
     {
         await contactOperation.GetContactList();
-
     } 
 
 #line default

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace EHContactClient.Data
+﻿namespace EHContactClient.Data
 {
     public class ContactData
     {

@@ -1518,11 +1518,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source\\EHI\\EHI\\EHContactClient\\EHContactClient.csproj",
+      "projectUniqueName": "D:\\Source\\Visual-Studio\\EHI\\Visual-Studio\\EHContactClient\\EHContactClient.csproj",
       "projectName": "EHContactClient",
-      "projectPath": "D:\\Source\\EHI\\EHI\\EHContactClient\\EHContactClient.csproj",
+      "projectPath": "D:\\Source\\Visual-Studio\\EHI\\Visual-Studio\\EHContactClient\\EHContactClient.csproj",
       "packagesPath": "C:\\Users\\priti\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\EHI\\EHI\\EHContactClient\\obj\\",
+      "outputPath": "D:\\Source\\Visual-Studio\\EHI\\Visual-Studio\\EHContactClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\priti\\AppData\\Roaming\\NuGet\\NuGet.Config",
