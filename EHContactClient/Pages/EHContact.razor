@@ -1,0 +1,149 @@
+﻿@page "/ContactComponent"
+
+<div style="background-color:#3a0647;color:white;font-family:Calibri;font-size:x-large;font-weight:500;text-align:center;border-radius:10px">
+    EHI Contact list
+</div>
+<hr style="color:#5c116f" />
+<div class="row" style="padding-left:900px;padding-bottom:4px">
+
+    <button id="btnAdd" @onclick="contactOperation.ShowAddpopup" style="background-color:#5c116f;color:white;font-family:Calibri">Add New </button>
+</div>
+
+@if (contactOperation.contactModel == null)
+{
+    <p><em>Loading...</em></p> }
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>PhoneNumber</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (EHContactGrpcService.Protos.ContactModel contact in contactOperation.contactModel)
+            {
+                var id = @contact.ContactID;
+                <tr>
+                    <td>@contact.ContactID</td>
+                    <td>@contact.FirstName</td>
+                    <td>@contact.LastName</td>
+                    <td>@contact.PhoneNumbers[0].Number</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="@(async () => await contactOperation.ShowEditForm(id))">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" @onclick="@(async () =>  contactOperation.ShowDeletePopup(id.ToString()))">Remove</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>}
+@if (contactOperation.ShowModel == true)
+{
+
+    <div class="modal" tabindex="-1" style="display:block;" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#5c116f;color:white;height:50px">
+                    <span class="modal-title">@contactOperation.PopupTitle</span>
+                    <button type="button" class="close">
+                        <span aria-hidden="true" style="color:white;">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <table border="0" cellspacing="1">
+                        <tr>
+                            <td><strong>ID</strong></td>
+                            <td><input type="text" @bind="contactOperation.contactData.Id" maxlength="20" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>FirstName</strong></td>
+                            <td><input type="text" @bind="contactOperation.contactData.FirstName" maxlength="20" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>LastName</strong></td>
+                            <td><input type="text" @bind="contactOperation.contactData.LastName" maxlength="20" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>PhoneNumber</strong></td>
+                            <td><input type="text" @bind="contactOperation.contactData.PhoneNumber" maxlength="20" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><button class="btn btn-primary" id="btnPostData" @onclick="contactOperation.PostData">@contactOperation.ActionText</button></td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>}
+
+@if (contactOperation.ShowAlert == true)
+{
+
+<div class="modal" tabindex="-2" style="display:block;padding-top:-200px;padding-right:0px" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#5c116f;color:white;height:50px">
+                <span class="modal-title">Notification</span>
+                <button type="button" class="close" @onclick="contactOperation.DismissPopup">
+                    <span aria-hidden="true" style="color:white;">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @contactOperation.OperationStatusText
+            </div>
+        </div>
+    </div>
+</div>}
+
+@if (contactOperation.ShowModeletePopup == true)
+{
+
+<div class="modal" tabindex="-3" style="display:block;padding-top:300px" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#5c116f;color:white;height:50px">
+                <span class="modal-title">Status</span>
+                <button type="button" class="close" @onclick="contactOperation.DismissPopup">
+                    <span aria-hidden="true" style="color:white;">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            Are you sure you want to delete this ToDo Item with Id @contactOperation.DeleteItemId ?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><button class="btn btn-primary" @onclick="contactOperation.DeleteData">Ok</button></td>
+                        <td align="left"><button class="btn btn-danger">Cancel</button></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>}
+
+
+
+
+@code {
+
+    private EHContactClient.CodeFiles.ContactOperation contactOperation = new CodeFiles.ContactOperation();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await contactOperation.GetContactList();
+
+    } }

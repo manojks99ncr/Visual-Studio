@@ -1,0 +1,2 @@
+obj\Release\net5.0\Protos/EHContact.cs \
+obj\Release\net5.0\Protos/EHContactGrpc.cs: Protos/EHContact.proto

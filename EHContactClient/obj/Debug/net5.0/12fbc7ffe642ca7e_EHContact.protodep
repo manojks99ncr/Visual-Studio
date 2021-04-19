@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/EHContact.cs \
+obj\Debug\net5.0\Protos/EHContactGrpc.cs: Protos/EHContact.proto
