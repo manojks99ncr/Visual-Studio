@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-22T14:45:42.337Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="ALSHeTrtftzeVwVs8_k2" version="14.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-22T14:46:17.679Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="0FCxZUMiml96F1kF5uCj" version="14.6.5" type="github">
   <diagram id="NB0nc3y7HzvrUC1EXCRt" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -69,12 +69,6 @@
         </mxCell>
         <mxCell id="YHVFfKZWVuZuWGWpSQxM-14" value="TTS(Azure Function)" style="html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="440" width="200" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="YHVFfKZWVuZuWGWpSQxM-18" value="" style="endArrow=none;startArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="384" y="523" as="sourcePoint" />
-            <mxPoint x="384" y="480" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="YHVFfKZWVuZuWGWpSQxM-20" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;exitX=0.715;exitY=-0.06;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="YHVFfKZWVuZuWGWpSQxM-14">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
